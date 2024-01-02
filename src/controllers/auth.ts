@@ -1,4 +1,4 @@
-import { findByEmail } from "../helpers/user";
+import { comparePassword, findByEmail, generateAuthToken, userToJSON } from "../helpers/user";
 import User from "../models/user";
 import { Request, Response } from "express";
 
@@ -29,9 +29,9 @@ const registerUser = async (req: Request, res: Response) => {
             firstName,
             lastName
         })
-        const token = user.generateAuthToken();
+        const token = generateAuthToken(user);
         res.status(201).json({ 
-            user: user.toJSON(), 
+            user: userToJSON(user), 
             token 
         });
     }
@@ -50,13 +50,13 @@ const loginUser = async (req: Request, res: Response) => {
         if(!user) {
             throw new Error('Invalid credentials');
         }
-        const isMatch = await user.comparePassword(password);
+        const isMatch = await comparePassword(password, user.password);
         if(!isMatch) {
             throw new Error('Invalid credentials');
         }
-        const token = user.generateAuthToken();
+        const token = generateAuthToken(user);
         res.status(201).json({ 
-            user: user.toJSON(), 
+            user: userToJSON(user), 
             token 
         });
     }
