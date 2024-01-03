@@ -1,0 +1,26 @@
+import mongoose from 'mongoose';
+import express from 'express';
+
+import authRouter from '../routes/auth';
+
+const uri = process.env.MONGODB_URI || 'mongodb://localhost:27017/webshop';
+
+async function connectToMongoDB() {
+    try {
+        await mongoose.connect(uri);
+        console.log('Connected to MongoDB');
+    } catch (err) {
+        console.log(err);
+    }
+}
+
+function setupRoutes(app: express.Application) {
+    let prepend = '/api/v1';
+    prepend = "";
+    app.use('/auth', authRouter);
+}
+
+export {
+    connectToMongoDB,
+    setupRoutes
+};
