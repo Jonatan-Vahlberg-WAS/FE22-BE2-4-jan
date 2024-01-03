@@ -17,7 +17,7 @@ async function connectToMongoDB() {
 
 function setupRoutes(app: express.Application) {
     let prepend = '/api/v1';
-    prepend = "";
+    prepend = ""; // for testing purposes
     app.use(`${prepend}/auth`, authRouter);
     app.use(`${prepend}/products`, productRouter);
 }
