@@ -1,8 +1,9 @@
 
 import jwt from 'jsonwebtoken';
 import { Request, Response, NextFunction } from 'express';
+import User from '../models/user';
 
-interface UserRequest extends Request {
+export interface UserRequest extends Request {
     userId?: string;
 }
 
@@ -25,7 +26,7 @@ export const verifyToken = (req: UserRequest, res: Response, next: NextFunction)
         if (err) {
             return res.status(401).send({ message: 'Unauthorized!' });
         }
-        req.userId = decoded.id;
+        req.userId = decoded._id;
         next();
     }
     
