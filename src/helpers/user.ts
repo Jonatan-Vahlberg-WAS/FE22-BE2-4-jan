@@ -1,7 +1,8 @@
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 
-import User, { IUser } from "../models/user";
+import User from "../models/user";
+import { IUser } from '../types/model';
 
 export const generateAuthToken = function(user: IUser) {
     const secret = process.env.JWT_SECRET || 'secret';

@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Smartphone",
+        "description": "High-performance smartphone with advanced features.",
+        "price": 599,
+        "categories": ["65953cabad473a0bc7dab5eb"]
+    },
+    {
+        "name": "Lipstick Set",
+        "description": "Set of long-lasting matte lipsticks in various shades.",
+        "price": 49,
+        "categories": ["65953cabad473a0bc7dab5e9"]
+    },
+    {
+        "name": "Men's Casual Shirt",
+        "description": "Comfortable and stylish shirt for everyday wear.",
+        "price": 35,
+        "categories": ["65953cabad473a0bc7dab5ec"]
+    },
+    {
+        "name": "Kitchen Blender",
+        "description": "Powerful blender for smoothies and food preparation.",
+        "price": 129,
+        "categories": ["65953cabad473a0bc7dab5e6"]
+    },
+    {
+        "name": "Yoga Mat",
+        "description": "High-quality yoga mat suitable for all types of yoga practice.",
+        "price": 25,
+        "categories": ["65953cabad473a0bc7dab5e7"]
+    },
+    {
+        "name": "Camping Tent",
+        "description": "Spacious and durable tent for outdoor adventures.",
+        "price": 199,
+        "categories": ["65953cabad473a0bc7dab5e7"]
+    },
+    {
+        "name": "Car Cleaning Kit",
+        "description": "Complete kit for cleaning and maintaining your car.",
+        "price": 59,
+        "categories": ["65953cabad473a0bc7dab5ea"]
+    },
+    {
+        "name": "Bestseller Novel",
+        "description": "New York Times bestselling novel by a renowned author.",
+        "price": 18,
+        "categories": ["65953cabad473a0bc7dab5e5"]
+    },
+    {
+        "name": "Wireless Earbuds",
+        "description": "High-quality wireless earbuds with noise cancellation.",
+        "price": 129,
+        "categories": ["65953cabad473a0bc7dab5eb"]
+    },
+    {
+        "name": "Facial Moisturizer",
+        "description": "Hydrating facial moisturizer suitable for all skin types.",
+        "price": 35,
+        "categories": ["65953cabad473a0bc7dab5e9"]
+    },
+    {
+        "name": "Women's Running Shoes",
+        "description": "Comfortable and durable shoes for running and training.",
+        "price": 79,
+        "categories": ["65953cabad473a0bc7dab5ec"]
+    },
+    {
+        "name": "Coffee Maker",
+        "description": "Programmable coffee maker for brewing your favorite coffee.",
+        "price": 89,
+        "categories": ["65953cabad473a0bc7dab5e6"]
+    },
+    {
+        "name": "Cycling Helmet",
+        "description": "Safety-certified helmet for cyclists, providing protection.",
+        "price": 45,
+        "categories": ["65953cabad473a0bc7dab5e7"]
+    },
+    {
+        "name": "Hiking Backpack",
+        "description": "Spacious backpack with multiple compartments for hiking gear.",
+        "price": 129,
+        "categories": ["65953cabad473a0bc7dab5e7"]
+    },
+    {
+        "name": "Car Seat Covers",
+        "description": "Universal fit car seat covers for protecting your car seats.",
+        "price": 39,
+        "categories": ["65953cabad473a0bc7dab5ea"]
+    },
+    {
+        "name": "Self-Help Book",
+        "description": "Inspirational self-help book offering valuable insights.",
+        "price": 24,
+        "categories": ["65953cabad473a0bc7dab5e5"]
+    },
+    {
+        "name": "4K Smart TV",
+        "description": "Ultra-HD Smart TV with streaming capabilities.",
+        "price": 899,
+        "categories": ["65953cabad473a0bc7dab5eb"]
+    },
+    {
+        "name": "Makeup Brush Set",
+        "description": "Complete set of makeup brushes for flawless application.",
+        "price": 29,
+        "categories": ["65953cabad473a0bc7dab5e9"]
+    },
+    {
+        "name": "Men's Formal Suit",
+        "description": "Elegant and stylish suit for formal occasions.",
+        "price": 199,
+        "categories": ["65953cabad473a0bc7dab5ec"]
+    },
+    {
+        "name": "Air Purifier",
+        "description": "Advanced air purifier for cleaner and healthier indoor air.",
+        "price": 299,
+        "categories": ["65953cabad473a0bc7dab5e6"]
+    }
+]
