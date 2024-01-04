@@ -29,7 +29,7 @@ const getAllCategories = async (req: Request, res: Response) => {
 
 const getAllproducts = async (req: Request, res: Response) => {
     try{
-        const products = await Product.find()
+        const products = await Product.find().populate('categories')
         res.status(200).json({
             products
         })
@@ -61,6 +61,7 @@ const createProduct = async (req: UserRequest, res: Response) => {
             price,
             categories
         })
+        product.populate('categories')
     
         res.status(201).json({
             product
