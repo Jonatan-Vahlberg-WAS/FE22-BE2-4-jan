@@ -3,6 +3,7 @@ import express from 'express';
 
 import authRouter from "../routes/auth"
 import userRouter from "../routes/user"
+import productRouter from "../routes/product"
 
 const uri = process.env.MONGODB_URI || 'mongodb://localhost:27017/webshop';
 
@@ -20,6 +21,7 @@ function setupRoutes(app: express.Application) {
     prepend = "";
     app.use(`${prepend}/auth`, authRouter);
     app.use(`${prepend}/user`, userRouter);
+    app.use(`${prepend}/products`, productRouter);
 }
 
 export {
